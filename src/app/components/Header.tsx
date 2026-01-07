@@ -31,7 +31,7 @@ export default function Header() {
           {t("privacy")}
         </Link>
         <Link
-          href="/privacy"
+          href="/terms"
           className="hover:text-neutral-900 transition-colors"
         >
           {t("terms")}

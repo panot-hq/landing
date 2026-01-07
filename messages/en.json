@@ -9,7 +9,7 @@
     "terms": "Terms"
   },
   "hero": {
-    "title": "meet panot",
+    "title": "meet PANOT",
     "subtitle": "your everyday companion to make your contacts less like a static entity and more like a living being."
   },
   "demo": {
@@ -58,5 +58,9 @@
   "privacy": {
     "title": "Privacy Policy",
     "description": "Here will be the PANOT's privacy policy."
+  },
+  "terms": {
+    "title": "Terms of Use",
+    "description": "Here will be PANOT's terms of use."
   }
 }
