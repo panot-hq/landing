@@ -1,0 +1,62 @@
+{
+  "metadata": {
+    "title": "PANOT - Your external memory for personal relationships",
+    "description": "Record your interactions by voice, keep your contacts' information automatically updated, and never forget the important details of your relationships."
+  },
+  "header": {
+    "changelog": "Changelog",
+    "privacy": "Privacy",
+    "terms": "Terms"
+  },
+  "hero": {
+    "title": "meet panot",
+    "subtitle": "your everyday companion to make your contacts less like a static entity and more like a living being."
+  },
+  "demo": {
+    "label": "How PANOT works",
+    "title": "Relational context capture and retrieval system",
+    "steps": {
+      "1": {
+        "title": "Record the interaction",
+        "description": "After each relevant conversation, record an audio describing what happened. No forms, no required fields."
+      },
+      "2": {
+        "title": "Automatic processing",
+        "description": "The system extracts structured information and updates the contact's profile autonomously."
+      },
+      "3": {
+        "title": "Contextual retrieval",
+        "description": "Before a meeting, check the complete history and receive a summary with the necessary context."
+      }
+    }
+  },
+  "interactions": {
+    "today": "Today",
+    "yesterday": "Yesterday",
+    "messages": {
+      "1": "Had coffee with...",
+      "2": "Saw Maria, she said...",
+      "3": "Pablo seemed a bit...",
+      "4": "Walked with Ana, talked about...",
+      "5": "Had dinner with Julian and he..."
+    }
+  },
+  "cta": {
+    "title": "Stop carrying the weight of remembering.",
+    "subtitle": "PANOT is your external memory for the relationships that truly matter.",
+    "appStore": "App Store",
+    "comingSoon": "Coming soon"
+  },
+  "footer": {
+    "rights": "© 2026 PANOT",
+    "allRightsReserved": "All rights reserved"
+  },
+  "changelog": {
+    "title": "Changelog",
+    "description": "This section will have a timeline with product updates: new features, UX improvements and fixes and overall announcements and important info."
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "description": "Here will be the PANOT's privacy policy."
+  }
+}
