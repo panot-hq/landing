@@ -1,11 +1,20 @@
-"use client";
-
-import { useTranslations } from "next-intl";
+import { getTranslations, setRequestLocale } from "next-intl/server";
+import { routing } from "@/i18n/routing";
 import Header from "../../components/Header";
 import Screen from "../../components/PageTransition";
 
-export default function ChangelogPage() {
-  const t = useTranslations("changelog");
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
+
+type Props = {
+  params: Promise<{ locale: string }>;
+};
+
+export default async function ChangelogPage({ params }: Props) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations("changelog");
 
   return (
     <main className="min-h-screen bg-white text-neutral-900">
@@ -26,4 +35,3 @@ export default function ChangelogPage() {
     </main>
   );
 }
-
