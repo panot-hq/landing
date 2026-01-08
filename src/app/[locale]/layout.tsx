@@ -47,7 +47,7 @@ export default async function LocaleLayout({
   // Enable static rendering
   setRequestLocale(locale);
 
-  if (!routing.locales.includes(locale as "en" | "es")) {
+  if (!routing.locales.includes(locale as "en-US" | "es-ES")) {
     notFound();
   }
 

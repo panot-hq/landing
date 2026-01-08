@@ -2,13 +2,16 @@ import { createClient, SupabaseClient } from "@supabase/supabase-js";
 
 let supabase: SupabaseClient | null = null;
 
-function getSupabaseClient(): SupabaseClient {
+function getSupabaseClient(): SupabaseClient | null {
   if (!supabase) {
     const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
     const key = process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY;
 
     if (!url || !key) {
-      throw new Error("Supabase environment variables are not configured");
+      console.warn(
+        "Supabase environment variables are not configured. Waitlist functionality will be disabled."
+      );
+      return null;
     }
 
     supabase = createClient(url, key, {
@@ -25,9 +28,13 @@ function getSupabaseClient(): SupabaseClient {
 export async function subscribeToWaitlist(
   email: string
 ): Promise<{ success: boolean; error?: string }> {
-  const { error } = await getSupabaseClient()
-    .from("newsletter_members")
-    .insert({ email });
+  const client = getSupabaseClient();
+
+  if (!client) {
+    return { success: false, error: "service_unavailable" };
+  }
+
+  const { error } = await client.from("newsletter_members").insert({ email });
 
   if (error) {
     if (error.code === "23505") {

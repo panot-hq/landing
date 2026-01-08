@@ -23,9 +23,9 @@ export default function NotFound() {
               we&apos;ll help you get back.
             </p>
 
-            {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
+            {}
             <a
-              href="/"
+              href="landing/en-US"
               className="inline-flex items-center gap-2 px-6 py-3 bg-black text-white rounded-full font-medium hover:bg-neutral-800 transition-colors"
             >
               <svg
