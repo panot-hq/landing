@@ -45,7 +45,16 @@
     "title": "Deja de cargar con el peso de recordar.",
     "subtitle": "PANOT es tu memoria externa para las relaciones que realmente importan.",
     "appStore": "App Store",
-    "comingSoon": "Próximamente"
+    "comingSoon": "Próximamente",
+    "form": {
+      "placeholder": "tu@email.com",
+      "submit": "Unirme",
+      "successTitle": "¡Gracias por unirte!",
+      "successMessage": "Te avisaremos en cuanto PANOT esté listo. Mientras tanto, gracias por tu confianza.",
+      "errorAlreadySubscribed": "Este email ya está registrado.",
+      "errorGeneric": "Algo salió mal. Inténtalo de nuevo.",
+      "privacy": "Solo recibirás actualizaciones del producto. No spam, prometido."
+    }
   },
   "footer": {
     "rights": "© 2026 PANOT",

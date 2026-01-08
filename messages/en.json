@@ -45,7 +45,16 @@
     "title": "Stop carrying the weight of remembering.",
     "subtitle": "PANOT is your external memory for the relationships that truly matter.",
     "appStore": "App Store",
-    "comingSoon": "Coming soon"
+    "comingSoon": "Coming soon",
+    "form": {
+      "placeholder": "your@email.com",
+      "submit": "Join",
+      "successTitle": "Thanks for joining!",
+      "successMessage": "We'll let you know as soon as PANOT is ready. In the meantime, thanks for your trust.",
+      "errorAlreadySubscribed": "This email is already subscribed.",
+      "errorGeneric": "Something went wrong. Please try again.",
+      "privacy": "You will only recieve product updates. No spam, we promise."
+    }
   },
   "footer": {
     "rights": "© 2026 PANOT",
