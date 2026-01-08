@@ -62,7 +62,36 @@
   },
   "changelog": {
     "title": "Novedades",
-    "description": "Esta sección tendrá una línea de tiempo con actualizaciones del producto: nuevas funcionalidades, mejoras de UX, correcciones y anuncios e información importante."
+    "description": "Una línea de tiempo con actualizaciones del producto: nuevas funcionalidades, mejoras, correcciones y anuncios importantes.",
+    "types": {
+      "release": "Versión",
+      "announcement": "Anuncio",
+      "milestone": "Hito",
+      "fix": "Corrección"
+    },
+    "entries": {
+      "v0_1_0": {
+        "date": "próximamente",
+        "type": "release",
+        "title": "PANOT v0.1.0 - Primera Beta",
+        "description": "La primera versión beta de PANOT está lista para pruebas internas. La funcionalidad principal está implementada.",
+        "changes": []
+      },
+      "landing_v1": {
+        "date": "2026-01-08",
+        "type": "announcement",
+        "title": "Lanzamiento de la Landing Page",
+        "description": "Hemos lanzado la página oficial de PANOT para empezar a construir nuestra comunidad.",
+        "changes": []
+      },
+      "project_start": {
+        "date": "2025-10-01",
+        "type": "milestone",
+        "title": "Inicio del Proyecto",
+        "description": "El desarrollo de PANOT comienza oficialmente como parte de un proyecto de fin de grado que explora la gestión de relaciones personales potenciada por IA.",
+        "changes": []
+      }
+    }
   },
   "privacy": {
     "title": "Política de Privacidad",

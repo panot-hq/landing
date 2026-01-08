@@ -62,7 +62,36 @@
   },
   "changelog": {
     "title": "Changelog",
-    "description": "This section will have a timeline with product updates: new features, UX improvements and fixes and overall announcements and important info."
+    "description": "A timeline with product updates: new features, improvements, fixes, and important announcements.",
+    "types": {
+      "release": "Release",
+      "announcement": "Announcement",
+      "milestone": "Milestone",
+      "fix": "Fix"
+    },
+    "entries": {
+      "v0_1_0": {
+        "date": "soon",
+        "type": "release",
+        "title": "PANOT v0.1.0 - First Beta",
+        "description": "The first beta version of PANOT is ready for internal testing. Core functionality is implemented.",
+        "changes": []
+      },
+      "landing_v1": {
+        "date": "2026-01-08",
+        "type": "announcement",
+        "title": "Landing Page Launch",
+        "description": "We've launched the official PANOT landing page to start building our community.",
+        "changes": []
+      },
+      "project_start": {
+        "date": "2025-10-01",
+        "type": "milestone",
+        "title": "Project Kickoff",
+        "description": "PANOT development officially begins as part of a university thesis project exploring AI-powered personal relationship management.",
+        "changes": []
+      }
+    }
   },
   "privacy": {
     "title": "Privacy Policy",
