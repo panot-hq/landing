@@ -66,10 +66,162 @@
   },
   "privacy": {
     "title": "Política de Privacidad",
-    "description": "Aquí estará la política de privacidad de PANOT."
+    "lastUpdated": "Última actualización: 8 de enero de 2025",
+    "intro": "Esta Política de Privacidad describe cómo PANOT (en adelante, \"nosotros\", \"la aplicación\" o \"el servicio\") recopila, utiliza y protege tu información personal. Al utilizar PANOT, aceptas las prácticas descritas en esta política. Si no estás de acuerdo, por favor no utilices el servicio.",
+    "sections": {
+      "collect": {
+        "title": "1. Información que recopilamos",
+        "intro": "Recopilamos información únicamente para proporcionar la funcionalidad de \"Inteligencia Relacional\" y mejorar el servicio.",
+        "direct": {
+          "title": "A. Información que nos proporcionas",
+          "account": "Información de cuenta: Al registrarte, recopilamos tu dirección de correo electrónico y credenciales de autenticación (gestionadas de forma segura a través de Supabase).",
+          "voice": "Notas de voz: Audio capturado a través del micrófono, que se transcribe localmente en tu dispositivo sin enviarse a servidores externos.",
+          "text": "Texto y notas: Descripciones de contactos, interacciones y detalles personales que escribes manualmente.",
+          "contacts": "Contactos: Información de tu agenda (nombres, teléfonos) que decides importar o crear en la aplicación."
+        },
+        "automatic": {
+          "title": "B. Información recopilada automáticamente",
+          "usage": "Datos de uso y dispositivo: Recopilamos información técnica sobre cómo interactúas con la app (funciones utilizadas, errores, tiempo de sesión) y datos del dispositivo (modelo, versión de iOS, idioma) a través de PostHog para detectar errores y mejorar la usabilidad.",
+          "logs": "Registros del servidor: Supabase genera registros técnicos de acceso a la API por motivos de seguridad.",
+          "push": "Notificaciones push: Si activas las notificaciones, almacenamos tu token de dispositivo para enviarte recordatorios y actualizaciones del servicio."
+        }
+      },
+      "use": {
+        "title": "2. Cómo utilizamos tu información",
+        "provide": "Proveer el servicio: Permitirte crear una cuenta, guardar tus contactos y sincronizarlos entre dispositivos.",
+        "ai": "Servicios de IA: La transcripción de audio se realiza localmente en tu dispositivo. El texto transcrito se envía a OpenAI (GPT) para extraer entidades, resumir interacciones y actualizar tu grafo de relaciones.",
+        "aiNote": "Importante: No utilizamos tus datos para entrenar modelos públicos de IA.",
+        "billing": "Facturación: Procesar pagos y suscripciones a través de Stripe. Nosotros no almacenamos tu número de tarjeta; eso lo gestiona Stripe directamente.",
+        "communication": "Comunicación: Enviarte correos transaccionales (confirmación de cuenta, cambios en la política) y notificaciones push si las has activado."
+      },
+      "legal": {
+        "title": "3. Base legal del tratamiento",
+        "intro": "Tratamos tus datos personales en base a:",
+        "contract": "Ejecución del contrato: El tratamiento es necesario para prestarte el servicio que has solicitado.",
+        "consent": "Consentimiento: Para el procesamiento de audio y el envío de notificaciones push, que puedes revocar en cualquier momento.",
+        "legitimate": "Interés legítimo: Para analítica de producto, seguridad y mejora del servicio."
+      },
+      "share": {
+        "title": "4. Compartición de datos",
+        "intro": "No vendemos tu información personal. Solo compartimos datos con los proveedores necesarios para que la app funcione:",
+        "supabase": "Supabase: Base de datos y autenticación (email, datos cifrados de contactos).",
+        "openai": "OpenAI: Procesamiento de IA (texto de interacciones para análisis semántico).",
+        "stripe": "Stripe: Pasarela de pagos (email, datos de pago).",
+        "posthog": "PostHog: Analítica de producto (eventos de uso anónimos, tipo de dispositivo).",
+        "legal": "Podríamos divulgar información si así lo exige la ley (por ejemplo, una orden judicial)."
+      },
+      "security": {
+        "title": "5. Seguridad",
+        "intro": "Implementamos las siguientes medidas de seguridad:",
+        "encryption": "Cifrado: Los datos se transmiten mediante TLS y se almacenan cifrados en reposo (AES-256) en Supabase.",
+        "localFirst": "Arquitectura Local-First: Una copia completa de tus datos reside localmente en tu dispositivo, dándote soberanía sobre tu información y permitiendo el uso offline.",
+        "rls": "Control de acceso: Utilizamos políticas de seguridad a nivel de fila (RLS) en la base de datos, garantizando que solo tu usuario autenticado pueda acceder a tus datos."
+      },
+      "retention": {
+        "title": "6. Retención de datos",
+        "account": "Datos de cuenta: Se conservan mientras mantengas tu cuenta activa.",
+        "audio": "Audios: Se procesan y transcriben localmente en tu dispositivo. Los archivos de audio nunca se envían a servidores externos.",
+        "logs": "Logs técnicos: Se conservan durante 90 días para propósitos de seguridad y diagnóstico.",
+        "analytics": "Datos de analítica: Se conservan de forma anónima durante 2 años.",
+        "deletion": "Eliminación de cuenta: Si eliminas tu cuenta desde la configuración de la app, tus datos se borrarán permanentemente de nuestros servidores en un plazo de 30 días."
+      },
+      "rights": {
+        "title": "7. Tus derechos (RGPD)",
+        "intro": "Si te encuentras en el Espacio Económico Europeo (EEE), tienes los siguientes derechos:",
+        "access": "Acceso: Solicitar una copia de los datos que tenemos sobre ti.",
+        "rectification": "Rectificación: Corregir datos inexactos.",
+        "erasure": "Supresión: Solicitar el borrado de tus datos (\"derecho al olvido\").",
+        "portability": "Portabilidad: Recibir tus datos en un formato estructurado (JSON/CSV).",
+        "restriction": "Limitación: Solicitar que limitemos el uso de tus datos.",
+        "objection": "Oposición: Oponerte al tratamiento basado en interés legítimo.",
+        "contact": "Puedes ejercer estos derechos enviando un correo a: dpo@panot.com",
+        "authority": "También tienes derecho a presentar una reclamación ante la autoridad de control competente (en España, la Agencia Española de Protección de Datos - www.aepd.es)."
+      },
+      "transfers": {
+        "title": "8. Transferencias internacionales",
+        "content": "Nuestros proveedores (OpenAI, Stripe, Supabase) pueden procesar datos en Estados Unidos. Al utilizar la aplicación, aceptas esta transferencia. Utilizamos proveedores que se adhieren al Data Privacy Framework (DPF) UE-EE.UU. o que utilizan Cláusulas Contractuales Tipo (SCC) aprobadas por la Comisión Europea."
+      },
+      "minors": {
+        "title": "9. Menores de edad",
+        "content": "PANOT no está dirigido a menores de 13 años. No recopilamos conscientemente información personal de menores de dicha edad. Si detectamos que hemos recopilado datos de un menor sin el consentimiento parental requerido, los eliminaremos inmediatamente."
+      },
+      "changes": {
+        "title": "10. Cambios en esta política",
+        "content": "Podemos actualizar esta política ocasionalmente. Te notificaremos cualquier cambio significativo a través de la aplicación o por correo electrónico antes de que entren en vigor."
+      },
+      "consent": {
+        "title": "11. Consentimiento",
+        "content": "Al utilizar nuestro sitio web y aplicaciones móviles, aceptas nuestra Política de Privacidad y nuestros Términos de Servicio."
+      }
+    }
   },
   "terms": {
-    "title": "Términos de Uso",
-    "description": "Aquí estarán los términos de uso de PANOT."
+    "title": "Términos y Condiciones",
+    "lastUpdated": "Última actualización: 8 de enero de 2025",
+    "sections": {
+      "intro": {
+        "title": "1. Introducción y Aceptación",
+        "welcome": "Bienvenido a PANOT (en adelante, \"la Aplicación\" o \"el Servicio\"). Estos Términos y Condiciones (\"Términos\") constituyen un acuerdo legal vinculante entre tú (\"el Usuario\") y Ángel Rodríguez Morán (en adelante, \"el Desarrollador\" o \"nosotros\"), con domicilio a efectos de notificaciones en Madrid, España.",
+        "acceptance": "Al descargar, instalar o utilizar PANOT, aceptas estar sujeto a estos Términos. Si no estás de acuerdo con alguna parte de los mismos, no debes utilizar la aplicación."
+      },
+      "service": {
+        "title": "2. Descripción del Servicio y Uso de IA",
+        "description": "PANOT es una herramienta de \"Personal CRM\" que utiliza Inteligencia Artificial para gestionar relaciones personales.",
+        "ai": "Generación por IA: El Servicio utiliza tecnologías de terceros (OpenAI) para generar resúmenes, perfiles y grafos de relaciones. La transcripción de audio se realiza localmente en tu dispositivo.",
+        "noWarranty": "Sin Garantía de Exactitud: Reconoces que la IA es una tecnología probabilística y puede producir información inexacta, ofensiva o alucinaciones (\"confabulaciones\"). No debes confiar en el Servicio como única fuente de verdad para decisiones críticas (médicas, legales, financieras o de seguridad). El Usuario es responsable de verificar la información generada."
+      },
+      "accounts": {
+        "title": "3. Cuentas y Seguridad",
+        "registration": "Registro: Para usar el Servicio, debes registrarte mediante un correo electrónico válido.",
+        "responsibility": "Responsabilidad: Eres el único responsable de mantener la confidencialidad de tu contraseña y de toda la actividad que ocurra bajo tu cuenta.",
+        "age": "Edad Mínima: Debes tener al menos 13 años para utilizar este Servicio. Los usuarios entre 13 y 18 años deben contar con el consentimiento de un padre o tutor legal."
+      },
+      "license": {
+        "title": "4. Licencia y Propiedad Intelectual",
+        "yourContent": "Tu Contenido: Conservas la propiedad total de los datos, audios y textos que introduces en la aplicación (\"Contenido del Usuario\"). Al subirlos, nos otorgas una licencia mundial, no exclusiva y libre de regalías para procesar dicho contenido únicamente con el fin de proporcionarte el servicio.",
+        "ourProperty": "Nuestra Propiedad: El diseño de la aplicación, el código fuente, los logotipos y la arquitectura del grafo relacional son propiedad exclusiva del Desarrollador y están protegidos por las leyes de propiedad intelectual."
+      },
+      "payments": {
+        "title": "5. Suscripciones y Pagos",
+        "intro": "Si decides adquirir un plan de suscripción (\"PANOT Pro\") o realizar compras dentro de la app:",
+        "processing": "Procesamiento: Los pagos son procesados de forma segura a través de Stripe o el sistema de Apple In-App Purchase.",
+        "renewal": "Renovación Automática: Las suscripciones se renuevan automáticamente al final de cada periodo (mensual/anual) a menos que las canceles con al menos 24 horas de antelación.",
+        "cancellation": "Cancelación: Puedes gestionar o cancelar tu suscripción en cualquier momento desde los ajustes de tu cuenta (o ajustes de Apple ID). La cancelación será efectiva al finalizar el periodo de facturación actual.",
+        "withdrawal": "Derecho de Desistimiento: Al ser contenido digital de suministro inmediato, al suscribirte aceptas que el servicio comience de inmediato y reconoces que pierdes tu derecho de desistimiento de 14 días una vez iniciado el servicio, conforme a la Ley General para la Defensa de los Consumidores y Usuarios."
+      },
+      "conduct": {
+        "title": "6. Conducta Prohibida",
+        "intro": "Al usar PANOT, te comprometes a NO:",
+        "recording": "Utilizar la aplicación para grabar a terceros sin su consentimiento, violando las leyes de privacidad aplicables.",
+        "illegal": "Introducir contenido ilegal, difamatorio, acosador o que incite al odio.",
+        "reverseEngineering": "Intentar realizar ingeniería inversa, descompilar o intentar extraer el código fuente de la aplicación.",
+        "training": "Utilizar el servicio para entrenar otros modelos de inteligencia artificial."
+      },
+      "disclaimer": {
+        "title": "7. Exención de Responsabilidad",
+        "asIs": "El Servicio se proporciona \"TAL CUAL\" y \"SEGÚN DISPONIBILIDAD\". En la máxima medida permitida por la ley aplicable, el Desarrollador renuncia a todas las garantías, expresas o implícitas.",
+        "liability": "Limitación de Responsabilidad: En ningún caso el Desarrollador será responsable por daños indirectos, incidentales, especiales o consecuentes (incluyendo pérdida de datos o beneficios) derivados del uso de PANOT. La responsabilidad total del Desarrollador no excederá la cantidad que hayas pagado por el Servicio en los últimos 12 meses."
+      },
+      "modifications": {
+        "title": "8. Modificaciones del Servicio",
+        "content": "Nos reservamos el derecho de modificar, suspender o discontinuar el Servicio (o cualquier parte del mismo) en cualquier momento, con o sin previo aviso. No seremos responsables ante ti ni ante terceros por ninguna modificación, suspensión o interrupción del Servicio."
+      },
+      "law": {
+        "title": "9. Ley Aplicable y Jurisdicción",
+        "content": "Estos Términos se regirán e interpretarán de acuerdo con las leyes de España. Cualquier disputa derivada de estos Términos se someterá a la jurisdicción exclusiva de los tribunales de la ciudad de Madrid, salvo que la ley de consumidores aplicable disponga lo contrario obligatoriamente."
+      },
+      "apple": {
+        "title": "10. Disposiciones para Usuarios de Apple",
+        "intro": "Si descargas la aplicación desde la Apple App Store, reconoces que:",
+        "terms": "Estos términos son entre tú y el Desarrollador, no con Apple.",
+        "maintenance": "Apple no tiene obligación de proporcionar servicios de mantenimiento o soporte para la aplicación.",
+        "refund": "En caso de fallo de la aplicación, puedes notificar a Apple y te reembolsarán el precio de compra (si aplica). Apple no tiene ninguna otra obligación de garantía.",
+        "beneficiary": "Apple y sus subsidiarias son terceros beneficiarios de estos Términos y tienen derecho a hacerlos cumplir contra ti."
+      },
+      "consent": {
+        "title": "11. Aceptación",
+        "content": "Al utilizar PANOT, confirmas que has leído, entendido y aceptado estos Términos y Condiciones en su totalidad."
+      }
+    }
   }
 }
