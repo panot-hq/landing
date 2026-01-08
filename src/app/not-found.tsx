@@ -25,7 +25,7 @@ export default function NotFound() {
 
             {}
             <a
-              href="landing/en-US"
+              href="en-US"
               className="inline-flex items-center gap-2 px-6 py-3 bg-black text-white rounded-full font-medium hover:bg-neutral-800 transition-colors"
             >
               <svg
