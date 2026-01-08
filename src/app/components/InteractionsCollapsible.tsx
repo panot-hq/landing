@@ -114,7 +114,7 @@ export default function InteractionColapsible() {
                 }}
               >
                 <div
-                  className="relative bg-white rounded-2xl sm:rounded-3xl shadow-[0_4px_12px_rgba(0,0,0,0.1)] border border-gray-100 p-4 sm:p-5 mx-auto"
+                  className="relative bg-white rounded-2xl sm:rounded-3xl shadow-[0_4px_12px_rgba(0,0,0,0.1)] p-4 sm:p-5 mx-auto"
                   style={{
                     boxShadow:
                       index === 0
