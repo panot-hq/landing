@@ -44,7 +44,7 @@ export default function DemoSection() {
             <div className="space-y-6">
               {steps.map((step) => (
                 <div key={step.number} className="flex gap-4">
-                  <div className="w-7 h-7 rounded-full bg-black text-white flex items-center justify-center text-xs font-mono flex-shrink-0">
+                  <div className="w-7 h-7 rounded-lg bg-black text-white flex items-center justify-center text-xs font-mono flex-shrink-0">
                     {step.number}
                   </div>
                   <div>
