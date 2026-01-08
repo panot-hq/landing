@@ -1,22 +1,33 @@
-import { createClient } from "@supabase/supabase-js";
+import { createClient, SupabaseClient } from "@supabase/supabase-js";
 
-// Cliente anónimo para operaciones públicas (sin manejo de sesiones)
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY!,
-  {
-    auth: {
-      persistSession: false,
-      autoRefreshToken: false,
-      detectSessionInUrl: false,
-    },
+let supabase: SupabaseClient | null = null;
+
+function getSupabaseClient(): SupabaseClient {
+  if (!supabase) {
+    const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
+    const key = process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY;
+
+    if (!url || !key) {
+      throw new Error("Supabase environment variables are not configured");
+    }
+
+    supabase = createClient(url, key, {
+      auth: {
+        persistSession: false,
+        autoRefreshToken: false,
+        detectSessionInUrl: false,
+      },
+    });
   }
-);
+  return supabase;
+}
 
 export async function subscribeToWaitlist(
   email: string
 ): Promise<{ success: boolean; error?: string }> {
-  const { error } = await supabase.from("newsletter_members").insert({ email });
+  const { error } = await getSupabaseClient()
+    .from("newsletter_members")
+    .insert({ email });
 
   if (error) {
     if (error.code === "23505") {
