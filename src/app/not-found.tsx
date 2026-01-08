@@ -1,3 +1,4 @@
+import Link from "next/link";
 import "./globals.css";
 
 export default function NotFound() {
@@ -23,9 +24,8 @@ export default function NotFound() {
               we&apos;ll help you get back.
             </p>
 
-            {}
-            <a
-              href="en-US"
+            <Link
+              href="/en"
               className="inline-flex items-center gap-2 px-6 py-3 bg-black text-white rounded-full font-medium hover:bg-neutral-800 transition-colors"
             >
               <svg
@@ -43,7 +43,7 @@ export default function NotFound() {
                 <path d="M19 12H5" />
               </svg>
               Back to home
-            </a>
+            </Link>
           </div>
         </main>
       </body>
