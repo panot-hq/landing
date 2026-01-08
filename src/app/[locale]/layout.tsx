@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
+import {
+  getMessages,
+  getTranslations,
+  setRequestLocale,
+} from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import "../globals.css";
@@ -47,7 +51,7 @@ export default async function LocaleLayout({
   // Enable static rendering
   setRequestLocale(locale);
 
-  if (!routing.locales.includes(locale as "en-US" | "es-ES")) {
+  if (!routing.locales.includes(locale as "en" | "es")) {
     notFound();
   }
 
