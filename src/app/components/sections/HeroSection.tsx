@@ -20,6 +20,7 @@ export default function HeroSection() {
           <p className="text-xl sm:text-2xl md:text-4xl font-mono">
             {t("subtitle")}
           </p>
+
           <div className="flex justify-center items-center">
             <IPhone />
           </div>
