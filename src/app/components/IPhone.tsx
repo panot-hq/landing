@@ -29,7 +29,7 @@ export default function IPhone() {
 
   return (
     <div className="flex justify-center items-center rounded-lg mt-50 w-[400px] h-[600px] relative mb-20">
-      <div className="flex justify-center items-center bg-stone-200 rounded-4xl p-4 h-35 w-80 absolute top-[0px] left-1/2 -translate-x-1/2">
+      <div className="flex justify-center items-center bg-stone-200 rounded-4xl p-4 h-35 w-75 absolute top-[0px] left-1/2 -translate-x-1/2">
         <AudioVisualizer barCount={40} color="#000" maxHeight={40} />
       </div>
       <Image src={iphoneImage} alt="iPhone" width={400} height={600} />
