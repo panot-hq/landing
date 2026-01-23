@@ -17,16 +17,16 @@
     "title": "Relational context capture and retrieval system",
     "steps": {
       "1": {
-        "title": "Record the interaction",
-        "description": "After each relevant conversation, record an audio describing what happened. No forms, no required fields."
+        "title": "Record interactions with automatic transcription",
+        "description": "Record your interactions by voice and let PANOT automatically transcribe them. No forms, no required fields—just speak naturally about what happened."
       },
       "2": {
-        "title": "Automatic processing",
-        "description": "The system extracts structured information and updates the contact's profile autonomously."
+        "title": "Import or create contacts",
+        "description": "Bring your existing contacts into PANOT or create new ones. Keep all your important relationships organized in one place."
       },
       "3": {
-        "title": "Contextual retrieval",
-        "description": "Before a meeting, check the complete history and receive a summary with the necessary context."
+        "title": "Assign interactions to see timelines",
+        "description": "Link your recorded interactions to specific contacts to build a complete timeline of your relationship with each person. See your entire history at a glance."
       }
     }
   },

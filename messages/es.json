@@ -17,16 +17,16 @@
     "title": "Sistema de captura y recuperación de contexto relacional",
     "steps": {
       "1": {
-        "title": "Registra la interacción",
-        "description": "Tras cada conversación relevante, graba un audio describiendo lo ocurrido. Sin formularios, sin campos obligatorios."
+        "title": "Graba interacciones con transcripción automática",
+        "description": "Graba tus interacciones por voz y deja que PANOT las transcriba automáticamente. Sin formularios, sin campos obligatorios—solo habla de forma natural sobre lo ocurrido."
       },
       "2": {
-        "title": "Procesamiento automático",
-        "description": "El sistema extrae la información estructurada y actualiza el perfil del contacto de forma autónoma."
+        "title": "Importa o crea contactos",
+        "description": "Trae tus contactos existentes a PANOT o crea nuevos. Mantén todas tus relaciones importantes organizadas en un solo lugar."
       },
       "3": {
-        "title": "Recuperación contextual",
-        "description": "Antes de un encuentro, consulta el historial completo y recibe un resumen con el contexto necesario."
+        "title": "Asigna interacciones para ver líneas de tiempo",
+        "description": "Vincula tus interacciones grabadas a contactos específicos para construir una línea de tiempo completa de tu relación con cada persona. Ve todo tu historial de un vistazo."
       }
     }
   },

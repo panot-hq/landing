@@ -47,7 +47,7 @@ const interactionsData: Interaction[] = [
 export default function InteractionColapsible() {
   const t = useTranslations("interactions");
   const [visibleInteractions, setVisibleInteractions] = useState<Interaction[]>(
-    [interactionsData[0]]
+    [interactionsData[0]],
   );
   const [currentIndex, setCurrentIndex] = useState(1);
 
@@ -114,7 +114,7 @@ export default function InteractionColapsible() {
                 }}
               >
                 <div
-                  className="relative bg-white rounded-2xl sm:rounded-3xl shadow-[0_4px_12px_rgba(0,0,0,0.1)] p-4 sm:p-5 mx-auto"
+                  className="relative bg-white rounded-3xl shadow-[0_4px_12px_rgba(0,0,0,0.1)] p-5 sm:p-5 mx-auto"
                   style={{
                     boxShadow:
                       index === 0
@@ -125,7 +125,7 @@ export default function InteractionColapsible() {
                   }}
                 >
                   <div className="relative">
-                    <div className="w-3 h-3 sm:w-4 sm:h-4 bg-[#FF5117] rounded-full mb-1.5 absolute top-[-20] sm:top-[-25] right-[-15] sm:right-[-20]" />
+                    <div className="w-4 h-4 sm:w-4 sm:h-4 bg-[#FF5117] rounded-full mb-1.5 absolute top-[-23] sm:top-[-25] right-[-20] sm:right-[-20]" />
                     <div className="flex items-start justify-between gap-2 sm:gap-0">
                       <div className="flex-1 pr-2 sm:pr-3">
                         <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1.5">
