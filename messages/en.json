@@ -106,7 +106,7 @@
           "account": "Account information: When you register, we collect your email address and authentication credentials (managed securely through Supabase).",
           "voice": "Voice notes: Audio captured through the microphone, which is transcribed locally on your device without being sent to external servers.",
           "text": "Text and notes: Descriptions of contacts, interactions and personal details you write manually.",
-          "contacts": "Contacts: Information from your address book (names, phone numbers) that you choose to import or create in the application."
+          "contacts": "Contacts: Information from your address book (names and summaries) that you import or create is stored on our servers (Supabase). This data is kept encrypted. We do not process it for other purposes or share it with third parties; it is used solely to provide you with the service."
         },
         "automatic": {
           "title": "B. Automatically collected information",
@@ -133,7 +133,7 @@
       "share": {
         "title": "4. Data sharing",
         "intro": "We do not sell your personal information. We only share data with providers necessary for the app to function:",
-        "supabase": "Supabase: Database and authentication (email, encrypted contact data).",
+        "supabase": "Supabase: Database and authentication infrastructure. We store your email and contact data (encrypted) on it. Contact data is not processed or shared with third parties.",
         "openai": "OpenAI: AI processing (interaction text for semantic analysis).",
         "stripe": "Stripe: Payment gateway (email, payment data).",
         "posthog": "PostHog: Product analytics (anonymous usage events, device type).",
@@ -163,7 +163,7 @@
         "portability": "Portability: Receive your data in a structured format (JSON/CSV).",
         "restriction": "Restriction: Request that we limit the use of your data.",
         "objection": "Objection: Object to processing based on legitimate interest.",
-        "contact": "You can exercise these rights by sending an email to: dpo@panot.com",
+        "contact": "You can exercise these rights by sending an email to: dpo@panotapp.com",
         "authority": "You also have the right to lodge a complaint with the competent supervisory authority (in Spain, the Spanish Data Protection Agency - www.aepd.es)."
       },
       "transfers": {

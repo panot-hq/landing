@@ -95,7 +95,7 @@
   },
   "privacy": {
     "title": "Política de Privacidad",
-    "lastUpdated": "Última actualización: 8 de enero de 2025",
+    "lastUpdated": "Última actualización: 30 de enero de 2026",
     "intro": "Esta Política de Privacidad describe cómo PANOT (en adelante, \"nosotros\", \"la aplicación\" o \"el servicio\") recopila, utiliza y protege tu información personal. Al utilizar PANOT, aceptas las prácticas descritas en esta política. Si no estás de acuerdo, por favor no utilices el servicio.",
     "sections": {
       "collect": {
@@ -106,7 +106,7 @@
           "account": "Información de cuenta: Al registrarte, recopilamos tu dirección de correo electrónico y credenciales de autenticación (gestionadas de forma segura a través de Supabase).",
           "voice": "Notas de voz: Audio capturado a través del micrófono, que se transcribe localmente en tu dispositivo sin enviarse a servidores externos.",
           "text": "Texto y notas: Descripciones de contactos, interacciones y detalles personales que escribes manualmente.",
-          "contacts": "Contactos: Información de tu agenda (nombres, teléfonos) que decides importar o crear en la aplicación."
+          "contacts": "Contactos: La información de tu agenda (nombres y resúmenes) que importas o creas se almacena en nuestros servidores (Supabase). Estos datos se conservan cifrados. No los procesamos para otros fines ni los compartimos con terceros; se utilizan exclusivamente para ofrecerte la funcionalidad del servicio."
         },
         "automatic": {
           "title": "B. Información recopilada automáticamente",
@@ -133,7 +133,7 @@
       "share": {
         "title": "4. Compartición de datos",
         "intro": "No vendemos tu información personal. Solo compartimos datos con los proveedores necesarios para que la app funcione:",
-        "supabase": "Supabase: Base de datos y autenticación (email, datos cifrados de contactos).",
+        "supabase": "Supabase: Infraestructura de base de datos y autenticación. En ella almacenamos tu email y los datos de contactos (cifrados). Los datos de contactos no se procesan ni se comparten con terceros.",
         "openai": "OpenAI: Procesamiento de IA (texto de interacciones para análisis semántico).",
         "stripe": "Stripe: Pasarela de pagos (email, datos de pago).",
         "posthog": "PostHog: Analítica de producto (eventos de uso anónimos, tipo de dispositivo).",
@@ -163,7 +163,7 @@
         "portability": "Portabilidad: Recibir tus datos en un formato estructurado (JSON/CSV).",
         "restriction": "Limitación: Solicitar que limitemos el uso de tus datos.",
         "objection": "Oposición: Oponerte al tratamiento basado en interés legítimo.",
-        "contact": "Puedes ejercer estos derechos enviando un correo a: dpo@panot.com",
+        "contact": "Puedes ejercer estos derechos enviando un correo a: dpo@panotapp.com",
         "authority": "También tienes derecho a presentar una reclamación ante la autoridad de control competente (en España, la Agencia Española de Protección de Datos - www.aepd.es)."
       },
       "transfers": {
