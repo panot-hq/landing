@@ -17,6 +17,13 @@ const nextConfig: NextConfig = {
   distDir: "dist",
   images: {
     unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "tools.applemediaservices.com",
+        pathname: "/api/assets/**",
+      },
+    ],
   },
 };
 

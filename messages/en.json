@@ -10,7 +10,8 @@
   },
   "hero": {
     "title": "meet PANOT",
-    "subtitle": "your everyday companion to make your contacts less like a static entity and more like a human being."
+    "subtitle": "your everyday companion to make your contacts less like a static entity and more like a human being.",
+    "appStoreBadge": "Download on the App Store"
   },
   "demo": {
     "label": "How PANOT works",
@@ -70,8 +71,20 @@
       "fix": "Fix"
     },
     "entries": {
+      "v1_0_0": {
+        "date": "2026-02-01",
+        "type": "release",
+        "title": "PANOT v1.0.0 - First Public Release",
+        "description": "PANOT is now in the App Store!",
+        "changes": [
+          "Basic functionality for recording and transcribing audio",
+          "Basic functionality for importing and creating contacts",
+          "Basic functionality for assigning interactions to contacts",
+          "Basic functionality for visualizing timelines"
+        ]
+      },
       "v0_1_0": {
-        "date": "soon",
+        "date": "2026-01-20",
         "type": "release",
         "title": "PANOT v0.1.0 - First Beta",
         "description": "The first beta version of PANOT is ready for internal testing. Core functionality is implemented.",

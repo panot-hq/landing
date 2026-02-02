@@ -4,7 +4,6 @@ import { useState, FormEvent } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { subscribeToWaitlist } from "@/helpers/supabase";
-import Image from "next/image";
 
 type SubmitStatus = "idle" | "loading" | "success" | "error";
 
@@ -49,20 +48,6 @@ export default function CTASection() {
           <p className="text-lg sm:text-xl text-neutral-500 max-w-xl mx-auto mb-10">
             {t("subtitle")}
           </p>
-          <div className="flex justify-center items-center mt-5 mb-10">
-            <a
-              href="https://www.producthunt.com/products/panot?embed=true&utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-panot"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                alt="Panot - Your external memory for relationships | Product Hunt"
-                width={250}
-                height={54}
-                src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1067084&theme=light&t=1769172631871"
-              />
-            </a>
-          </div>
 
           <div className="max-w-md mx-auto mb-10">
             <AnimatePresence mode="wait">
