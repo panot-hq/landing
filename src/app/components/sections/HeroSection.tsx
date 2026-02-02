@@ -6,16 +6,10 @@ import IPhone from "../IPhone";
 
 const APP_STORE_URL = "https://apps.apple.com/es/app/panot/id6757428877";
 
-const BADGE_LOCALE: Record<string, string> = {
-  en: "en-us",
-  es: "es-es",
-};
-
 export default function HeroSection() {
   const t = useTranslations("hero");
   const locale = useLocale();
-  const badgeLocale = BADGE_LOCALE[locale] ?? "en-us";
-  const badgeSrc = `https://tools.applemediaservices.com/api/assets/featured-content/apps/badges/badge-1/${badgeLocale}.svg`;
+  const badgeSrc = `/app-store-badge-${locale === "es" ? "es" : "en"}.svg`;
 
   return (
     <section className="relative">
@@ -44,10 +38,10 @@ export default function HeroSection() {
                 <Image
                   src={badgeSrc}
                   alt=""
-                  className="h-12 sm:h-14 md:h-16 w-auto"
-                  width={160}
-                  height={64}
-                  unoptimized
+                  width={250}
+                  height={54}
+                  className="h-[54px] w-[250px]"
+                  aria-hidden
                 />
               </a>
               <a
